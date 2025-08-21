@@ -1,8 +1,8 @@
 {
   inputs,
   cell,
-}:let
+}: let
   pkgs = inputs.nixpkgs;
 in {
-  default = import ./config.nix { inherit pkgs; };
+  default = import ./config.nix {inherit pkgs;};
 }

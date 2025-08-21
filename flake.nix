@@ -3,8 +3,9 @@
   inputs.nixpkgs.url = "nixpkgs";
 
   outputs = {std, ...} @ inputs:
-    with std; growOn {
-      inherit inputs;
-      cellsFrom = ./apps;
-    };
+    with std;
+      growOn {
+        inherit inputs;
+        cellsFrom = ./apps;
+      };
 }
